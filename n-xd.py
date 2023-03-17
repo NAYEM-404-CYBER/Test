@@ -957,7 +957,7 @@ def menu_apikey():
   print("")
   print("\033[1;37m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
   print("")
-  print("  SEND KEY ON ADMIN WHATSAPP YOUR  KEY : "+id)    ");time.sleep(1)
+  print("  SEND KEY ON ADMIN WHATSAPP,,,,,,,,,,,,,,,  ");time.sleep(1)
   os.system('xdg-open https://wa.me/+923231243823')
   print("");time.sleep(2)
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
