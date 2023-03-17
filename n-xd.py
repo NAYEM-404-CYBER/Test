@@ -905,7 +905,7 @@ def rcrack(ids,passlist):
 def menu_apikey():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "_".join(uuid)
-  server = requests.get('https://github.com/NAYEM-404-CYBER/approval.txt').text
+  server = requests.get('https://test-paid.blogspot.com/?m=1').text
   
  
 
@@ -962,7 +962,7 @@ def menu_apikey():
   print("");time.sleep(2)
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.get("https://github.com/NAYEM-404-CYBER/approval.txt").text
+    httpCaht = requests.get("https://test-paid.blogspot.com/?m=1").text
     if id in httpCaht:
       print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
@@ -987,7 +987,7 @@ menu_apikey()
 def tnx():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "_".join(uuid)
-  server = requests.get('https://github.com/NAYEM-404-CYBER/approval.txt').text
+  server = requests.get('https://test-paid.blogspot.com/?m=1').text
   
  
 
@@ -997,7 +997,7 @@ def tnx():
   print(" Chacking Your Aproval ")
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.get("https://github.com/NAYEM-404-CYBER/approval.txt").text
+    httpCaht = requests.get("https://test-paid.blogspot.com/?m=1").text
     if id in httpCaht:
       print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
