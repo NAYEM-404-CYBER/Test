@@ -857,7 +857,7 @@ def rcrack(ids,passlist):
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
 			'accept-encoding':'gzip, deflate, br',
-			'cache-control': max-age=0 
+			'cache-control': 'max-age=0', 
 			'sec-ch-ua':"Google Chrome";v="111", "Not(A:Brand";v="8", 
 			'sec-ch-ua-mobile': '?0','sec-ch-ua-platform': '"Windows"',
 			'sec-fetch-dest': 'document',
