@@ -856,7 +856,7 @@ def rcrack(ids,passlist):
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
-			'accept-encoding':'gzip, deflate, br
+			'accept-encoding':'gzip, deflate, br',
 			'cache-control': max-age=0 
 			'sec-ch-ua': '" "Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111",
 			'sec-ch-ua-mobile': '?0','sec-ch-ua-platform': '"Windows"',
