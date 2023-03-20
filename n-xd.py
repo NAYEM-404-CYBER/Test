@@ -31,7 +31,7 @@ except ModuleNotFoundError:
 	os.system('python n-xd.py')
 android_models=[]
 try:
-	xx = requests.get('https://raw.githubusercontent.com/AKING110/Data/main/sm.txt').text.splitlines()
+	xx = requests.get('https://github.com/Niki404-Cyber/user-agnet/blob/main/user-agents.txt').text.splitlines()
 	for line in xx:
 		android_models.append(line)
 except:pass
@@ -39,7 +39,7 @@ myid=uuid.uuid4().hex[:5].upper()
 
 usr=[]
 try:
-	xd=requests.get('https://raw.githubusercontent.com/ahmad77412/DATA-FILE/main/UAGNT').text.splitlines()
+	xd=requests.get('https://github.com/Niki404-Cyber/user-agnet/blob/main/user-agents.txt').text.splitlines()
 	for us in xd:
 		usr.append(us)
 except: pass
