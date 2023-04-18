@@ -30,7 +30,7 @@ except ModuleNotFoundError:
 	os.system('python n-xd.py')
 android_models=[]
 try:
-	xx = requests.get('https://github.com/Niki404-Cyber/user-agnet/blob/main/user-agents.txt').text.splitlines()
+	xx = requests.get('https://github.com/NAYEM-404-CYBER/Test/blob/main/ua.txt').text.splitlines()
 	for line in xx:
 		android_models.append(line)
 except:pass
@@ -38,7 +38,7 @@ myid=uuid.uuid4().hex[:5].upper()
 
 usr=[]
 try:
-	xd=requests.get('https://github.com/Niki404-Cyber/user-agnet/blob/main/user-agents.txt').text.splitlines()
+	xd=requests.get('https://github.com/NAYEM-404-CYBER/Test/blob/main/ua.txt').text.splitlines()
 	for us in xd:
 		usr.append(us)
 except: pass
@@ -96,7 +96,7 @@ def uaku():
 		for ub in ua : 
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/Niki404-Cyber/user-agnet/blob/main/user-agents.txt').text
+		a=requests.get('https://github.com/NAYEM-404-CYBER/Test/blob/main/ua.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
